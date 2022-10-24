@@ -1,5 +1,4 @@
-from logging import exception
-from unittest import result
+
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -31,7 +30,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("Hello there . I am Alexsa . how  can  I  be  of  service? ")    
+    speak("Hello there . I am  Shubham's  Alexsa . how  can  I  be  of  service? ")    
 
 def takecommand():
     #it take microphone input from the user and return string  output
@@ -105,7 +104,7 @@ if __name__  == "__main__":
             try:
                 speak("What should I say?")
                 content = takecommand()
-                to = "shubhamyourEmail@gmail.com"
+                to = "yourEmail@gmail.com" #shubham@gmail.com
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
